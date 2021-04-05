@@ -1,0 +1,148 @@
+@charset "utf-8";
+@import "common.scss";
+
+
+.gallery_type1_container {
+	.tit_txt {
+		font-size: 3.2rem;
+		font-family: $font_m;
+		text-align: center;
+	}
+	
+	.wrap_gallery {
+		display: flex;
+		flex-wrap: wrap;
+		
+		li {
+			width: 426px;
+			height: 300px;
+			padding: 15px;
+			box-sizing: border-box;
+			
+			.wrap_img_txt {
+				overflow: hidden;
+				position: relative;
+				width: 396px;
+				height: 270px;
+				
+				.bg_overlay {
+					display: flex;
+					align-items: center;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					left: 0;
+					top: 0;
+					padding: 0 58px;
+					background-color: rgba(0, 0, 0, 0.6);
+					opacity: 0;
+					transition: opacity 0.5s;
+					
+					.txt_area {
+						font-family: $font_r;
+						font-size: $cont_txt;
+						line-height: 1.8;
+						color: #e1e1e1;
+						text-align: center;
+					}
+				}
+				
+				&:hover {
+					.bg_overlay {
+						opacity: 1
+					}
+					
+				}
+				
+			}
+		}
+	}
+}
+
+
+
+
+.picture_show_container { //갤러리 크게 보기 HP.1-6-4-2-2
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	box-sizing: border-box;
+	
+	.cnt_image_info {
+		position: absolute;
+		left: 60px;
+		top: 60px;
+		font-family: $font_r;
+		font-size: $cont_txt;
+		color: #f7f7f7;
+		
+		.current_page {padding: 0 5px 0 0;}
+		
+		.ttl_page {padding: 0 0 0 5px;}
+	}
+	
+	.wrap_big_picture {
+		overflow: hidden;
+		width: 1280px;
+				height: 829px;
+		position: absolute;
+		left:50%;
+		top:86px;
+		margin-left: -640px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		box-sizing: border-box;
+		background: #fff;
+		
+		.area_cont {
+			height: 720px;
+			
+			img {height: 100%;}
+		}
+		
+		.area_foot {
+			padding: 0 59px;
+			
+			.post_tit {
+				padding: 15px 0;
+				font-family: $font_m;
+				font-size: $cont_txt;
+				color:#252525;
+			}
+			
+			.post_note {
+				font-family: $font_r;
+				font-size: $cont_small_txt;
+				line-height: 1.5;
+				color:#757575;
+			}
+		}
+	}
+	
+	.area_side_arrow {
+		position: relative;
+		width: 1357px;
+		margin: 0 auto;
+		
+		.btn_prev, .btn_next {display: block; position: absolute; top:436px;}
+		.btn_prev {
+			left:0;
+			@include bg(24px,44px,'/images/btn_arrow_gall_prev.svg');
+		}
+		.btn_next {
+			right:0;
+			@include bg(24px,44px,'/images/btn_arrow_gall_next.svg');
+		}
+	}
+	
+	.btn_close_bigshow {
+		display: block;
+		position: absolute;
+		right:60px;
+		top:60px;
+		@include bg(24px,24px,'/images/btn_close_white.svg');
+	}
+}
+

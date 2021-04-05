@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="./js/jquery-3.1.0.min.js"></script>
+    <!--플러그인 // -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/croppie.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <script src="./js/owl.carousel.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- include codemirror (codemirror.css, codemirror.js, xml.js, formatting.js) -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/theme/monokai.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/mode/xml/xml.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/2.36.0/formatting.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+    <link href="./css/video-js.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css"
+        href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <link rel="stylesheet" href="./css/jquery.minicolors.css">
+    <script src="./js/jquery.minicolors.min.js"></script>
+    <link rel="Stylesheet" type="text/css" href="./css/wSelect.css" />
+    <script type="text/javascript" src="./js/wSelect.min.js"></script>
+    <link rel="stylesheet" href="./css/calendar.css">
+    <script type="text/javascript" src="./js/calendar.js"></script>
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css" />
+    <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!--    <script type="text/javascript" src="https://github.com/malihu/malihu-custom-scrollbar-plugin/blob/master/jquery.mCustomScrollbar.concat.min.js"></script>-->
+    <!-- // 플러그인-->
+    <link rel=" stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/builder.css">
+    <link rel="stylesheet" href="./css/component.css">
+    <link rel="stylesheet" href="./css/board.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/layer_setting_popup.css">
+
+    <script type="text/javascript"
+        src="https://maps.google.com/maps/api/js?key=AIzaSyByOw9NFI6GygGm93XWpldFJr5HbZYk_dA"></script>
+</head>
+
+<body class="edit-mode">
+<div class="manage_option_page">
+    <div class="wrap_page_opt">
+        <div class="btn_all_menu">
+            <span>메뉴 관리</span>
+        </div>
+        <div class="btn_return">
+            <span class="icon_return"><i class="blind">이전으로 돌리기</i></span>
+        </div>
+        <div class="btn_this_menu">
+            <span class="this_menu_name">HOME</span>
+            <span class="icon_i"><i class="blind">현재 메뉴 관리하기</i></span>
+        </div>
+        <div class="btn_common_opt">
+            <span class="icon_common_opt"><i class="blind">공통 설정하기</i></span>
+        </div>
+        <div class="btn_preview_page_area">
+            <span class="btn_preview"><i class="blind">수정 화면 미리보기</i></span>
+        </div>
+        <div class="btn_work_area">
+            <span class="btn_save">저장</span>
+            <span class="btn_upload">게시완료</span>
+            <span class="btn_close">나가기</span>
+        </div>
+    </div>
+</div>
+
+<div id="header_save">
+    <div class="mask">
+        <span class="btn_close"><i class="icon_close"><span class="blind">크게 보기 닫기</span></i></span>
+    </div>
+    <div class="mobile_header leftmenu" style="display:none;">
+        <div class="btn_leftmenu"><i class="blind">메뉴</i></div>
+        <div class="logo"><img src="./images/playblock_logo1.png" alt="playblock"/></div>
+    </div>
+
+
+    <header class="header ">
+        <div class="inner mCustomScrollbar">
+            <div class="wrap_gnb">
+                <h1 class="logo header_logo">
+                    <img src="./images/playblock_logo1.png" class="logoimg" alt="playblock"/>
+                    <span class="txt" style="display:none;">플레이콕</span>
+                    <div class="hiddenfile" style="position:absolute;top:0;left:0;opacity:0;">
+                        <input type="file" name="file" class="sel_logo" value=""/>
+                    </div>
+                </h1>
+                <nav class="gnb">
+                    <div class="inner">
+                        <ul class="list list_depth1">
+                            <li class="depth1_li" data-href="main.html" data-name="HOME">
+                                <a href="index.html" target="" class="txt box_add_depth2"><span class="wrap_menu"><em
+                                        class="menu_name">HOME</em><i class="btn_add"><span class="blind">하위 메뉴추가
+                                                버튼</span></i></span></span></a>
+                                <ul class="list_depth2">
+                                    <li class="depth2_li"><a href="index12312.html" class="txt2"><span
+                                            class="wrap_menu"><em class="menu_name">서브메뉴1</em></span></a></li>
+                                    <li class="depth2_li"><a href="index12312.html" class="txt2"><span
+                                            class="wrap_menu"><em class="menu_name">서브메뉴2</em></span></a></li>
+                                </ul>
+                            </li>
+                            <li class="depth1_li" data-href="index_about.html" data-name="ABOUT">
+                                <a href="index_about.html" class="txt box_add_depth2"><span class="wrap_menu"><em
+                                        class="menu_name">ABOUT</em><i class="btn_add"><span class="blind">하위 메뉴추가
+                                                버튼</span></i></span></a>
+                                <ul class="list_depth2">
+                                    <li class="depth2_li"><a href="index12312.html" class="txt2"><span
+                                            class="wrap_menu"><em class="menu_name">서브메뉴</em></span></a></li>
+                                </ul>
+                            </li>
+                            <li class="depth1_li on" data-href="index_service.html" data-name="SERVICE">
+                                <a href="index_service.html" data-href="index_service.html"
+                                   class="txt box_add_depth2"><span class="wrap_menu"><em
+                                        class="menu_name">SERVICE</em><i class="btn_add"><span class="blind">하위 메뉴추가
+                                                버튼</span></i></span></a>
+                            </li>
+                            <li class="depth1_li" data-href="index_project.html" data-name="PROJECT">
+                                <a href="index_project.html" class="txt box_add_depth2"><span class="wrap_menu"><em
+                                        class="menu_name">PROJECT</em><i class="btn_add"><span class="blind">하위 메뉴추가
+                                                버튼</span></i></span></a>
+                            </li>
+                            <li class="depth1_li" data-href="index_contact.html" data-name="CONTACT">
+                                <a href="index_contact.html" class="txt box_add_depth2"><span class="wrap_menu"><em
+                                        class="menu_name">CONTACT</em><i class="btn_add"><span class="blind">하위 메뉴추가
+                                                버튼</span></i></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="login_area">
+                    <span class="btn_login">LOGIN</span>
+                    <span class="btn_join">회원가입</span>
+                </div>
+                <!--로그인 했을 때 생깁니다. div class="wrap_login_tool">
+                    <div class="user_info_box">
+                        <img class="login_user_prfl_img" src="./images/basic_picture.svg" alt="프로필 사진" />
+                        <b class="name_txt">관리자</b>
+                        <span class="account_email">playblock123@playkok.com</span>
+                        <span class="btn_logout">LOGOUT</span>
+                    </div>
+                </div -->
+
+                <div class="wrap_search on">
+                    <div class="inp_box">
+                        <input class="inp_sch_txt" type="text"/>
+                        <i class="search_area"><span class="blind">검색아이콘</span></i>
+                    </div>
+                </div>
+                <ul class="page_terms_wrap">
+                    <li><a href="">개인정보 처리방침</a></li>
+                    <li><a href="">이용 약관</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+</div>
+
+<main role="main">
+    <div class="banner_basic_type1" id="list1">
+        <section class="sub_head"
+                 style="background-image:url(./images/bg_basic_sample.jpg); background-size: cover; background-position:50% 50%;">
+            <div class="inner_section">
+                <div class="wrap_txt">
+                    <div class="txt_edit">
+                        <div class="txt_area wrap_tit">
+                            <h2 class="cont_page_tit">Service</h2>
+                        </div>
+                        <div class="txt_area wrap_subtit">
+                            <p class="cont_page_subtit">대한민국 대표 커뮤니티 플레이콕</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrap_imgtxt_three2">
+            <div class="inner_section">
+                <div class="padding_sty1"></div>
+                <div class="padding_sty1"></div>
+                <div class="wrap_txt_img_sty1">
+                    <div class="wrap_txt_area">
+                        <div class="txt_area">
+                            <h3 class="section_tit_left">SNS와 홈페이지를 결합시켜<br/>
+                                고객에게 더 나은, 더 좋은 서비스를 제공하는 <span class='txt_point'>플레이콕</span><br/>
+                                나를 자유롭게 표현하고 나를 더 알릴 수 있는 기회를 제공합니다.</h3>
+                            <p class="section_note">관심 키워드 검색을 통해 보다 정확한 정보를 찾아주고 같은 취미를 가진 사람들과 친해질 수
+                                있습니다<br/>
+                                정보를 공유하고 서로 소통해보세요. 관심 키워드 검색을 통해 보다 정확한 정보를 찾아주고 같은 취미를 가진 사람들과 친해질 수 있습니다.<br/>
+                                정보를 공유하고 서로 소통해보세요.</p>
+                        </div>
+                    </div>
+                    <div class="padding_sty1"></div>
+                    <div class="padding_sty1"></div>
+                    <div class="wrap_imgtxt_three3">
+                        <ul class="three_div">
+                            <li class="grid-square">
+                                <div class="img_area">
+                                    <a href="#" class="url_edited">
+                                        <img src="./images/sample_img1.jpg" class="changedimg"/>
+                                    </a>
+                                </div>
+                                <div class="txt_edit_cont">
+                                    <div class="txt_area">
+                                        <h4>공감 나누기</h4>
+                                    </div>
+                                    <div class="txt_area">
+                                        <p>많은 사람들과 이웃이 되어 베스트 콕커가
+                                            되어 보세요.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-square">
+                                <div class="img_area">
+                                    <a href="#" class="url_edited">
+                                        <img src="./images/sample_img2.jpg" class="changedimg"/>
+                                    </a>
+                                </div>
+                                <div class="txt_edit_cont">
+                                    <div class="txt_area">
+                                        <h4>리워드</h4>
+                                    </div>
+                                    <div class="txt_area">
+                                        <p>친구들에게 플레이콕을 추천하세요.
+                                            보상과 다양한 혜택을 누릴 수 있습니다. </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-square">
+                                <div class="img_area">
+                                    <a href="#" class="url_edited">
+                                        <img src="./images/sample_img2.jpg" class="changedimg"/>
+                                    </a>
+                                </div>
+                                <div class="txt_edit_cont">
+                                    <div class="txt_area">
+                                        <h4>공감 나누기</h4>
+                                    </div>
+                                    <div class="txt_area">
+                                        <p>많은 사람들과 이웃이 되어 베스트 콕커가
+                                            되어 보세요.</p>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="padding_sty1"></div>
+            </div>
+        </section>
+
+        <section class="wrap_txt_img_sty2 titbg">
+            <div class="inner_section">
+                <div class="tit_bg_area">
+                    <div class="tit_cont">
+                        <div class="txt_area">
+                            <h2 class="section_tit_center">정산 서비스</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap_txt_area txt_cont">
+                <div class="txt_area">
+                    <h3>
+                        플레이콕에서 받은 콩을 현금으로 환전할 수 있습니다.
+                    </h3>
+                    <p>
+                        공감이 되는 컨텐츠에 공감이 되거나 도움을 주고 싶다면 콩을 보내세요.<br/>
+                        콩을 이용해 플레이콕 만의 다양한 서비스를경험할 수 있습니다.
+                    </p>
+                </div>
+            </div>
+            <div class="component_add top"><span class="btn_add"></span></div>
+            <div class="component_add bottom"><span class="btn_add"></span></div>
+
+        </section>
+
+        </section>
+        <section class="wrap_txt_img_sty2">
+            <div class="inner_section">
+                <div class="padding_sty1"></div>
+                <div class="padding_sty1"></div>
+                <div class="padding_sty1"></div>
+                <div class="padding_sty1"></div>
+                <div class="wrap_address">
+                    <div class="txt_area">
+                        <h3 class="sub_tit_txt">문의</h3>
+                    </div>
+                    <address class="wrap_txt_area">
+                        <div class="txt_area">
+                            <p><b>주소: </b>대구광역시 남구 현충로 8길 1</p>
+                            <p><b>TEL: </b><a href="tel:;">070-4101-4320</a></p>
+                        </div>
+                    </address>
+                </div>
+                <div class="padding_sty1"></div>
+                <div class="padding_sty1"></div>
+            </div>
+            <div class="component_add top"><span class="btn_add"></span></div>
+            <div class="component_add bottom"><span class="btn_add"></span></div>
+        </section>
+    </div>
+</main>
+
+<footer class="footer layoutsty2">
+    <!-- sty2 layoutsty2 -->
+    <div class="wrap_footer">
+        <div class="right_area">
+            <strong class="logo">
+                <img src="./images/playblock_logo1.png" class="logoimg" alt="playkok">
+                <span class="txt" style="display:none;">플레이콕</span>
+                <div class="hiddenfile" style="position:absolute;top:0;left:0;opacity:0;">
+                    <input type="file" name="file" class="sel_logo" value="">
+                </div>
+            </strong>
+            <div class="sns_icon_area">
+                <a href="#" class="icon-sns1"><i class="blind">플레이콕으로 공유하기</i></a>
+                <a href="#" class="icon-sns2"><i class="blind">페이스북으로 공유하기</i></a>
+                <a href="#" class="icon-sns3"><i class="blind">네이버 블로그로 공유하기</i></a>
+                <a href="#" class="icon-sns4"><i class="blind">유튜브로 공유하기</i></a>
+            </div>
+        </div>
+        <div class="left_area">
+            <div class="site_info_area">
+                <div class="wrap_txt_area">
+                    <div class="txt_area">
+                        <p class="playkok_name">(주)플레이콕</p>
+                        <p class="site_name">site 명</p>
+                        <address class="site_basic_info">
+                            <p class="represent"><span class="name">회사명</span><span class="address">경기도 000시 길
+                                           00000-00</span>
+                            </p>
+                            <div class="contact_number">
+                                <span class="phone_num">Tel : 070-0000-1111</span>
+                                <span class="fax_num">Fax : 8813-068-9000</span>
+                                <span>Email : mmmm@playkok.com</span>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+                <ul class="page_terms_wrap">
+                    <li><a href="">개인정보 처리방침</a></li>
+                    <li><a href="">이용 약관</a></li>
+                </ul>
+                <copyright class="copyright_area">
+                    <span>COPYRIGHT PLAYKOK Corp. ALL RIGHTS RESERVED.</span>
+                </copyright>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="pop_area"></div>
+<div id="lightbox"></div>
+<div id="lightbox-shadow">
+    <span class="btn_close"><i class="icon_close"><span class="blind">크게 보기 닫기</span></i></span>
+</div>
+
+<script src="./js/Sortable.js"></script>
+<script src="./js/croppie.js"></script>
+<script src="./js/video.min.js"></script>
+<script src="./js/ui_common.js"></script>
+<script src="./js/set_menu.js"></script>
+<script src="./js/common_setting.js"></script>
+<script src="./js/summernote-ext-addclass.js"></script>
+</body>
+
+</html>

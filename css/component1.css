@@ -1,0 +1,31 @@
+* { color: #242424; }
+
+.img_area, .txt_area { padding: 15px !important; }
+
+.wrap_imgtxt h2 { font-size: 2.4rem; text-align: center; line-height: 80px; }
+.wrap_imgtxt .list { display: flex; }
+.wrap_imgtxt .list li div.txt_area { font-size: 1.6rem; }
+.wrap_imgtxt .list li .btn_imgtxt { display: block; width: 160px; height: 50px; margin: 30px auto; color: #1b6ae2; font-size: 1.6rem; line-height: 50px; text-align: center; border: 1px solid #1b6ae2; }
+.wrap_imgtxt .list.three_div li { width: 33.3%; }
+.wrap_imgtxt .list.three_div li:last-child { width: 33.4%; }
+.wrap_imgtxt .list.four_div li { width: 25%; }
+.wrap_imgtxt .list.four_div.sty2 img { width: 290px; height: 290px; border-radius: 200px; }
+.wrap_imgtxt .list.four_div.sty2 h3, .wrap_imgtxt .list.four_div.sty2 .txt_area { text-align: center; }
+.wrap_imgtxt .list.four_div.sty2 h3 { padding: 2px 0 4px; font-weight: bold; font-size: 2rem; }
+
+.wrap_imgtxt_horizon .inner_section { display: flex; align-content: center; }
+.wrap_imgtxt_horizon .inner_section .img_area, .wrap_imgtxt_horizon .inner_section .txt_area { padding: 15px; align-self: center; }
+.wrap_imgtxt_horizon .inner_section h3 { font-size: 28px; line-height: 1.29; }
+.wrap_imgtxt_horizon .inner_section p { margin-top: 4px; font-size: 1.6rem; line-height: 1.5; }
+.wrap_imgtxt_horizon .inner_section .btn_click { margin-top: 30px; display: inline-block; width: 50px; height: 2rem; color: #fff; font-size: 0; line-height: 2rem; text-align: center; border-radius: 4px; background: #b0c1c4; cursor: pointer; }
+.wrap_imgtxt_horizon .inner_section.sty2 { justify-content: flex-end; }
+.wrap_imgtxt_horizon .inner_section.sty2 .img_area { order: 2; }
+.wrap_imgtxt_horizon .inner_section.sty2 .txt_area { order: 1; }
+.wrap_imgtxt_horizon .img_four_area { display: flex; flex-wrap: wrap; width: 610px; margin: 15px; }
+.wrap_imgtxt_horizon .img_four_area li { width: 297px; height: 228px; }
+.wrap_imgtxt_horizon .img_four_area li:nth-child(odd) { padding: 0 8px 7.5px 0; }
+.wrap_imgtxt_horizon .img_four_area li:nth-child(even) { padding: 0 8px 7.5px 0; }
+.wrap_imgtxt_horizon .txt_area.sty2 { align-self: normal; margin: 230px 0 0 39px; }
+.wrap_imgtxt_horizon .txt_area.sty2 p { margin-bottom: 33px; }
+
+/*# sourceMappingURL=component1.css.map */

@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import "common.scss";
+
+.pb_start_page {//플레이블록 메인
+  
+  background: rgb(251,80,99);
+  background: linear-gradient(176deg, rgba(251,80,99,1) 0%, rgba(125,135,175,1) 100%);
+
+ .wrap_main_block {
+   position: relative;  
+   margin: 0 auto;
+   @include bg(1687px,1080px,"../images/wrap_main_block.png");
+
+  .tit_pb_intro {
+    position: absolute;
+    left:190px;
+    top:293px;
+
+    .wrap_intro:first-child {
+      margin-bottom: 21px;
+    }
+
+    b {
+      font-family: $font_m;
+      font-size: $tit_big_txt2;
+      color:#fff;
+    }
+    span {
+      font-family: $font_r;
+      font-size: $tit_txt;
+      color:#fff;
+      line-height: 1.5;
+
+      &.enter {display: block;}
+    }
+  }
+
+  .btn_make_site {
+    position: absolute;
+    top:666px;
+    left:666px;
+    width: 406px;
+    height: 170px;
+    font-family: $font_r;
+    font-size: 4rem;
+    line-height: 188px;
+    color:#fff;
+    text-align: center;
+    @include bg(406px,170px,'../images/bg_make_site.png');
+  }
+
+ }  
+
+}

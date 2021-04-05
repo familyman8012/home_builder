@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://www.play-block.com/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/croppie.css">
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.minicolors.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel=" stylesheet" href="css/common.css ">
+    <link rel=" stylesheet" href="css/builder.css ">
+    <link rel="stylesheet" href="css/component.css">    
+    <link rel="stylesheet" href="css/jquery.minicolors.css">
+    <link rel="stylesheet" href="css/layer_setting_popup.css">
+    <script src="js/jquery.minicolors.min.js"></script>
+</head>
+<body>
+    <div class="manage_option_page">
+        <div class="wrap_page_opt">
+            <div class="btn_all_menu">
+                <span>메뉴 관리</span>
+            </div>
+            <div class="btn_return">
+                <span class="icon_return"><i class="blind">이전으로 돌리기</i></span>
+            </div>
+            <div class="btn_this_menu">
+                <span class="this_menu_name">HOME</span>
+                <span class="icon_i"><i class="blind">현재 메뉴 관리하기</i></span>
+            </div>
+            <div class="btn_common_opt">
+                <span class="icon_common_opt"><i class="blind">공통 설정하기</i></span>
+            </div>
+            <div class="btn_preview_page_area">
+                <span class="btn_preview"><i class="blind">수정 화면 미리보기</i></span>
+            </div>
+            <div class="btn_work_area">
+                <span class="btn_save">저장</span>
+                <span class="btn_upload">게시완료</span>
+                <span class="btn_close">나가기</span>
+            </div>
+        </div>
+    </div>
+    <header class="normal">
+        <div class="inner">
+            <div class="wrap_gnb">
+                <h1 class="logo">
+                    <img src="images/playkok_logo.png" class="logoimg" alt="playkok" style="display:none;" />
+                    <span class="txt">플레이콕</span>
+                    <div class="hiddenfile" style="position:absolute;top:0;left:0;opacity:0;">
+                        <input type="file" name="file" class="sel_logo" value="" />
+                    </div>
+                </h1>
+                <nav class="gnb">
+                    <ul class="list">
+                        <li class="on"><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">PROJECTS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <aside class="tool">
+                <ul class="list">
+                    <li class="login on">
+                        <span class="txt">LOGIN</span>
+
+                    </li>
+                    <li class="wrap_search on"><span class="search_area"></span></li>
+                    <!-- li>회원가입</li -->
+                </ul>
+            </aside>
+        </div>
+    </header>
+    <!-- visual component -->
+    <section class="main_visual">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="wrap_txt"
+                        style="background-image:url(images/bg_swiper.png); 
+                                    background-color:rgba(0, 0, 0, 0); background-repeat : no-repeat; background-size : cover; background-position : 50% 50%;">
+                        <div class="txt_area">
+                            <p style="font-size:72px;font-weight:bold;color:#fff;">더 넓은 세상을 꿈꾸며1</p>
+                            <p style="font-size:40px;font-weight:bold;color:#fff;">플레이콕은 끝없이 발전합니다.</p>
+                            <p style="font-size:30px;color:#fff;">이미지와 택스트를 변경해 주세요.<br />
+                                여러장의 이미지를 이용하시면 자동 슬라이드 됩니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="wrap_txt"
+                        style="background-image:url(images/bg_swiper.png); 
+                                                    background-color:rgba(0, 0, 0, 0); background-repeat : no-repeat; background-size : cover; background-position : 50% 50%;">
+                        <div class="txt_area">
+                            <p style="font-size:72px;font-weight:bold;color:#fff;">더 넓은 세상을 꿈꾸며2</p>
+                            <p style="font-size:40px;font-weight:bold;color:#fff;">플레이콕은 끝없이 발전합니다.</p>
+                            <p style="font-size:30px;color:#fff;">이미지와 택스트를 변경해 주세요.<br />
+                                여러장의 이미지를 이용하시면 자동 슬라이드 됩니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="wrap_txt"
+                        style="background-image:url(images/bg_swiper.png); 
+                                                    background-color:rgba(0, 0, 0, 0); background-repeat : no-repeat; background-size : cover; background-position : 50% 50%;">
+                        <div class="txt_area">
+                            <p style="font-size:72px;font-weight:bold;color:#fff;">더 넓은 세상을 꿈꾸며3</p>
+                            <p style="font-size:40px;font-weight:bold;color:#fff;">플레이콕은 끝없이 발전합니다.</p>
+                            <p style="font-size:30px;color:#fff;">이미지와 택스트를 변경해 주세요.<br />
+                                여러장의 이미지를 이용하시면 자동 슬라이드 됩니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <!--// visual component -->
+    <main role="main">
+        <div class="list" id="list1">            
+            <section class="section">
+                <div class="wrap_imgtxt wrap_grid" style="position:relative;">              
+                    <div class="inner_section">
+                        <div class="padding_sty1"></div>
+                        <div class="wrap_txt_area sub_title">
+                            <h2 class="txt_area">플레이콕은 끝없이 발전합니다.</h2>
+                        </div>
+                        <div class="padding_sty1"></div>
+                        <ul class="list three_div grid_item">
+                            <li class="grid-square">
+                                <div class="img_area">
+                                    <a href="#" class="url_edited"><img src="images/sample_imgtxt1.png" class="changedimg" /></a>
+                                </div>
+                                <div class="wrap_txt_area">
+                                    <div class="txt_area">
+                                        이곳은 택스트가 들어갈 자리입니다.
+                                        마우스를 더블 클릭하시거나 오른쪽 마우스를 눌러 택스트 설
+                                        정을 선택하시면 내용을 변경할 수 있습니다.
+                                        내용을 변경해 보세요.
+                                        김
+                                    </div>
+                                </div>
+                                <div class="btn_area">
+                                    <a href="#" class="btn_click">BUTTON</a>
+                                </div>
+                            </li>
+                            <li class="grid-square">
+                                <div class="img_area">
+                                    <a href="#" class="url_edited"><img src="images/sample_imgtxt2.png" class="changedimg" /></a>
+                                </div>
+                                <div class="wrap_txt_area">
+                                    <div class="txt_area">
+                                        이곳은 택스트가 들어갈 자리입니다.
+                                        마우스를 더블 클릭하시거나 오른쪽 마우스를 눌러 택스트 설
+                                        정을 선택하시면 내용을 변경할 수 있습니다.
+                                        내용을 변경해 보세요.
+                                        김
+                                    </div>
+                                </div>
+                                <div class="btn_area">
+                                    <a href="#" class="btn_click">BUTTON</a>
+                                </div>
+                            </li>
+                            <li class="grid-square">
+                                <div class="img_area">
+                                    <a href="#" class="url_edited"><img src="images/sample_imgtxt3.png" class="changedimg" /></a>
+                                </div>
+                                <div class="wrap_txt_area">
+                                    <div class="txt_area">
+                                        이곳은 택스트가 들어갈 자리입니다.
+                                        마우스를 더블 클릭하시거나 오른쪽 마우스를 눌러 택스트 설
+                                        정을 선택하시면 내용을 변경할 수 있습니다.
+                                        내용을 변경해 보세요.
+                                        김
+                                    </div>
+                                </div>
+                                <div class="btn_area">
+                                    <a href="#" class="btn_click">BUTTON</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="component_add top"><span class="btn_add"></span></div>
+                    <div class="component_add bottom"><span class="btn_add"></span></div>
+                </div>
+            </section>
+            <section>
+                <div class="wrap_imgtxt_three">
+                    <div class="inner_section">
+                        <div class="padding_sty1"></div>
+                        <div class="wrap_txt_area sub_title">
+                            <h2 class="txt_area">플레이콕은 끝없이 발전합니다.</h2>
+                        </div>
+                        <div class="padding_sty1"></div>
+                        <div class="box_txt_img">
+                            <div class="wrap_txt_area">
+                                <div class="txt_area txt_area1">
+                                    <h3>즐거운 플레이콕 지금 만나세요.</h3>
+                                    <p>이곳은 택스트가 들어갈 자리입니다.
+                                        마우스를 더블 클릭하시거나 오른쪽 마우스를 눌러 택스트 설
+                                        정을 선택하시면 내용을 변경할 수 있습니다.</p>
+                                    <p>이곳은 택스트가 들어갈 자리입니다.
+                                        마우스를 더블 클릭하시거나 오른쪽 마우스를 눌러 택스트 설
+                                        정을 선택하시면 내용을 변경할 수 있습니다.
+                                        내용을 변경해 보세요.</p>
+                                    <h3>플레이콧 에디터를 이용해 보세요.</h3>
+                                    <p>누구나 쉽게 자신이 원하는 나만의 홈페이지를 만들어 보세요
+                                        플레이콕 에디터는 디자인과 코딩 걱정없이 누구나 쉽고 편하
+                                        게 홈페이지를 만들 수 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="img_area">
+                                <a href="#" class="url_edited"><img src="images/img_sample4.jpg" class="changedimg" /></a>
+                            </div>
+                            <div class="wrap_txt_area">
+                                <div class="txt_area txt_area2">
+                                    <h3>즐거운 플레이콕 지금 만나세요.</h3>
+                                    <p>이곳은 택스트가 들어갈 자리입니다.
+                                        마우스를 더블 클릭하시거나 오른쪽 마우스를 눌러 택스트 설
+                                        정을 선택하시면 내용을 변경할 수 있습니다.</p>
+                                    <p>이곳은 택스트가 들어갈 자리입니다.
+                                        마우스를 더블 클릭하시거나 오른쪽 마우스를 눌러 택스트 설
+                                        정을 선택하시면 내용을 변경할 수 있습니다.
+                                        내용을 변경해 보세요.</p>
+                                    <h3>플레이콧 에디터를 이용해 보세요.</h3>
+                                    <p>누구나 쉽게 자신이 원하는 나만의 홈페이지를 만들어 보세요
+                                        플레이콕 에디터는 디자인과 코딩 걱정없이 누구나 쉽고 편하
+                                        게 홈페이지를 만들 수 있습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component_add top"><span class="btn_add"></span></div>
+                    <div class="component_add bottom"><span class="btn_add"></span></div>
+                </div>
+            </section>
+            
+            <!-- div class="item wrap_grid">
+                    <div id="grid1">
+                        <div class="grid-square">Item 1</div>
+                        <div class="grid-square">Item 2</div>
+                        <div class="grid-square">Item 3</div>
+                    </div>
+            </div -->
+            <!-- div  class="item wrap_grid">
+                <div class="row">
+                    <h4 class="col-12">Grid Example</h4>
+                    <div id="grid2" class="col">
+                        <div class="grid-square">Item 1</div>
+                        <div class="grid-square">Item 2</div>
+                        <div class="grid-square">Item 3</div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item">Item 1.4</div>
+            <div class="item">Item 1.5</div>
+        </div -->
+       
+    </main>
+    <div class="popup pop_img_edit wrap_pop"
+        style="display:none;position:fixed;top:50%;left:50%;width:690px;transform:translate(-50%,-50%);">
+        <div class="head_area">
+            이미지 설정
+            <i class="btn_close"><span class="blind">메뉴설정닫기</span></i>
+        </div>
+        <div class="wrap_pop_cont">
+            <img class="changingimg" />
+            <div class="upload-image"></div>
+            <div class="upload_contain">
+                <label>이미지 업로드
+                    <input type="file" class="selimg">
+                </label>
+            </div>
+        </div>
+        <div class="bottom_area">
+            <form>
+                <div class="link_area">
+                    <label for="url">링크</label>
+                    <div class="inp_box">
+                        <input type="text" placeholder="url" id="url" />
+                    </div>
+                </div>
+                <div class="check_area">
+                    <label class="check_contain sty1">새창 <input type="checkbox" name="newWindow" id="newWindow">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check_contain">라이트 박스
+                        <input type="checkbox" name="lightbox" id="lightboxchk">
+                        <span class="checkmark"></span>
+                        <div class="tip_area">
+                            <span class="mark_tooltip blind">?</span>
+                            <div class="tooltip_note">
+                                <p>이미지를 클릭하면 주변이 어두워지면서 확대된
+                                    크기로 이미지를 표시하며, 미리보기에서 확인
+                                    가능합니다.</p>
+                                <p>단, 링크 사용시 라이트박스 효과는 무시됩니다.</p>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </form>
+            <div class="btn_area">
+                <span class="complete">적용</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="popup pop_component_add "
+        style="display:none;z-index:3000;position:fixed;top:50%;left:50%;width:700px;height:500px;border:1px solid;transform:translate(-50%,-50%);background-color:#fff;">
+        <span class="btn">1번 컴포넌트</span>
+        <span class="btn">2번 컴포넌트</span>
+        <span class="btn">3번 컴포넌트</span>
+        <span class="btn">4번 컴포넌트</span>
+        <span class="btn">5번 컴포넌트</span> 
+        <span class="btn">6번 컴포넌트</span>
+        <span class="btn">7번 컴포넌트</span>
+        <span class="btn">8번 컴포넌트</span>
+        <span class="btn">9번 컴포넌트</span>
+    </div>
+
+
+
+    <div id="lightbox">
+    
+    </div>
+    
+    <div id="lightbox-shadow">
+    
+    </div>
+    <!-- 공통설정 팝업 -->
+    <div class="wrap_pop pop_common_setting sty3">
+        <div class="head_area">
+            <span class="tit_txt">공통 설정</span>
+            <i class="btn_close"><span class="blind">공통설정닫기</span></i>
+        </div>
+        <div class="wrap_pop_cont">
+            <div class="cont_area">
+                <form action="" method="post" name="">
+                    <fieldset>
+                        <div class="body_comm">
+                            <h3 class="sub_tit">본문</h3>
+                            <div class="inp_box">
+                                <label for="bg_color">배경색</label>
+                                <div class="inp_area">
+                                    <input type="text" name="bg_color" class="inp_bg_color" value=" ">
+                                    <script>
+                                        
+                                    </script>
+                                </div>
+                            </div>
+                            <div class="inp_box">
+                                <label for="font_color">글자색</label>
+                                <div class="inp_area">
+                                    <input type="text" name="font_color" class="inp_font_color" value=" " />
+                                </div>
+                            </div>
+                            <div class="inp_box mg_last">
+                                <label for="font_family">본문 글꼴</label>
+                                <div class="select_area select_contain">
+                                    <label>굴림</label>
+                                    <select id="font_family">
+                                        <option value="">굴림</option>
+                                        <option value="">나눔고딕</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="sub_tit sty2">버튼</h3>
+                        <div class="preview_btn_area">
+                            <span class="btn_click" style="border-radius: 30px;">BUTTON</span>
+                        </div>
+                        <div class="inp_box">
+                            <label>스타일</label>
+                            <div class="box_style">
+                                <label class="radio_contain1 square">
+                                    <input type="radio" class="button_sty1_setting" checked="checked" name="option_style" value="1" />
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio_contain1 round">
+                                    <input type="radio" class="button_sty2_setting" name="option_style" value="2" />
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="radio_contain1 half_circle">
+                                    <input type="radio" class="button_sty3_setting" name="option_style" value="3" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="inp_box">
+                            <label for="btn_color">텍스트</label>
+                            <div class="inp_area">
+                                <input type="text" name="btn_color" value=" " class="inp_btntxt_color">
+                            </div>
+                        </div>
+                        <div class="inp_box">
+                            <label for="btn_bgc">배경색</label>
+                            <div class="inp_area">
+                                <input type="text" name="btn_bgc" value=" " class="inp_btnbg_color">
+                            </div>
+                        </div>
+                        <div class="inp_box">
+                            <label for="btn_bd_color">선</label>
+                            <div class="inp_area">
+                                <input type="text" name="btn_bd_color" value=" " class="inp_btnline_color">
+                            </div>
+                        </div>                        
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="bottom_area">
+            <span class="btn_apply">적용</span>
+        </div>
+    </div>
+    <!--// 공통설정 팝업 -->
+    <!-- 버튼설정 팝업 -->
+    <div class="wrap_pop btn_only_setting sty3">
+        <div class="head_area">
+            <span class="tit_txt">버튼 설정</span>
+            <i class="btn_close"><span class="blind">버튼설정닫기</span></i>
+        </div>
+        <div class="wrap_pop_cont">
+            <div class="cont_area">
+                <form action="" method="post" name="">
+                    <fieldset>                        
+                        <h3 class="sub_tit sty2">버튼</h3>
+                        <div class="preview_btn_area">
+                            <span class="btn_click" style="border-radius: 30px;">BUTTON</span>
+                        </div>
+                        <div class="inp_box">
+                            <label>스타일</label>
+                            <div class="box_style">
+                                <label class="radio_contain1 square">
+                                    <input type="radio" class="button_sty1_setting" checked="checked" name="option_style"
+                                        value="1" />
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio_contain1 round">
+                                    <input type="radio" class="button_sty2_setting" name="option_style" value="2" />
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="radio_contain1 half_circle">
+                                    <input type="radio" class="button_sty3_setting" name="option_style" value="3" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="inp_box">
+                            <label for="btn_color">텍스트</label>
+                            <div class="inp_area">
+                                <input type="text" name="btn_color" class="inp_btntxt_color">
+                            </div>
+                        </div>
+                        <div class="inp_box">
+                            <label for="btn_bgc">배경색</label>
+                            <div class="inp_area">
+                                <input type="text" name="btn_bgc" value=" " class="inp_btnbg_color">
+                            </div>
+                        </div>
+                        <div class="inp_box">
+                            <label for="btn_bd_color">선</label>
+                            <div class="inp_area">
+                                <input type="text" name="btn_bd_color" value=" "
+                                    class="inp_btnline_color">
+                            </div>
+                        </div>
+                        <div class="inp_box">
+                            <label for="btn_bd_color">url</label>
+                            <div class="inp_area">
+                                <div><input type="text" name="btn_bd_url" value=" " class="inp_btn_url"></div> 
+                                <div><input type="checkbox" name="btn_new_window" value=" " class="inp_btn_newwindow"></div>
+                            </div>
+                            <ul class="home_nav_url" style="overflow:auto;position:absolute;top:51px;left:127px;width:100px;height:100px;background:#fff;border:1px solid">
+                                <li><a href="https://www.play-block.com/test/h_builder/about">ABOUT</a></li>
+                                <li><a href="https://www.play-block.com/test/h_builder/services">SERVICES</a></li>
+                                <li><a href="https://www.play-block.com/test/h_builder/project">PROJECT</a></li>
+                                <li><a href="https://www.play-block.com/test/h_builder/contact">CONTACT</a></li>
+
+                            </ul>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="bottom_area">
+            <span class="btn_apply">적용</span>
+        </div>
+    </div>
+    <!-- 버튼설정 팝업 -->
+    <!-- 헤드스타일 팝업 -->
+    <div class="wrap_pop head_sty_select">
+        <span class="btn_close">닫기</span>
+        <div class="cont">
+        <span class="btn">1번 컴포넌트</span>
+        <span class="btn">2번 컴포넌트</span>
+        <span class="btn">3번 컴포넌트</span>
+        </div>
+        <span class="btn_apply">적용</span>
+    </div>
+    <!-- 헤드스타일 팝업 -->
+    <!-- 비주얼설정 팝업 -->
+    <div class="wrap_pop pop_visual_setting" style="width:800px;height:800px;">
+        <div class="pop_head">
+            <span class="btn_add_slide">
+                <input type="file" id="input_imgs" multiple />
+            </span>
+            <span class="tit">비주얼 이미지 설정</span>
+            <span class="btn_close">닫기</span>            
+        </div>
+        <div class="pop_cont">
+            <div class="add_slide_area" id="grid_preview">
+
+            </div>
+            <div class="edit_area">
+
+            </div>
+        </div>
+        
+    </div>
+    <!-- 비주얼설정 팝업 -->
+    
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+      
+    </script>
+    <script src="js/Sortable.js"></script>
+    <script src="js/croppie.js"></script>
+    <script src="js/ui_common.js"></script>
+    <script src="js/common_setting.js"></script>
+</body>
+
+</html>
